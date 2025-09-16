@@ -1,0 +1,16 @@
+
+#cache files
+**/__pycache__/
+
+# Environment files
+.env
+.env.*
+.env*.local
+
+# Secrets files
+secrets.toml
+.streamlit/secrets.toml
+
+# All toml files in .streamlit directory
+.streamlit/*.toml
+
