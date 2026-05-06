@@ -1,0 +1,7 @@
+first install dependencies such as matplotlib, numpy and pandas
+sgp4, datetime, 
+
+
+for task1-1
+added the 
+then run the script to visualize TLE data
