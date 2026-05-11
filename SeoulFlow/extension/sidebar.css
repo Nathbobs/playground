@@ -1,0 +1,154 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #0f1117;
+  color: #e2e8f0;
+  min-width: 280px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+header h1 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #f8fafc;
+}
+
+header .subtitle {
+  font-size: 0.75rem;
+  color: #64748b;
+  margin-top: 2px;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.controls input {
+  width: 100%;
+  padding: 7px 10px;
+  background: #1e2535;
+  border: 1px solid #334155;
+  border-radius: 6px;
+  color: #e2e8f0;
+  font-size: 0.85rem;
+}
+
+.controls input:disabled {
+  opacity: 0.5;
+}
+
+.btn-row {
+  display: flex;
+  gap: 8px;
+}
+
+button {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+
+button:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+#btn-start { background: #22c55e; color: #052e16; }
+#btn-stop  { background: #ef4444; color: #fff; }
+
+.status-section {
+  display: flex;
+  justify-content: center;
+}
+
+.badge {
+  padding: 6px 24px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 0.1em;
+}
+
+.badge.free     { background: #166534; color: #86efac; }
+.badge.light    { background: #713f12; color: #fde68a; }
+.badge.heavy    { background: #7c2d12; color: #fdba74; }
+.badge.gridlock { background: #7f1d1d; color: #fca5a5; }
+.badge.offline  { background: #1e293b; color: #64748b; }
+
+.stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.stat-card {
+  background: #1e2535;
+  border-radius: 8px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.stat-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #f8fafc;
+}
+
+.stat-label {
+  font-size: 0.7rem;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.score-section {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.score-section label {
+  font-size: 0.75rem;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.score-bar-track {
+  height: 8px;
+  background: #1e2535;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.score-bar {
+  height: 100%;
+  background: linear-gradient(90deg, #22c55e, #ef4444);
+  border-radius: 4px;
+  transition: width 0.4s ease;
+}
+
+.score-value {
+  font-size: 0.85rem;
+  color: #94a3b8;
+  text-align: right;
+}

@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "SeoulFlow",
+  "version": "1.0.0",
+  "description": "Real-time Seoul traffic monitoring",
+  "permissions": ["sidePanel"],
+  "host_permissions": [
+    "http://localhost:8000/*",
+    "https://*.ngrok.io/*",
+    "https://*.ngrok-free.app/*",
+    "https://*.ngrok.app/*"
+  ],
+  "side_panel": {
+    "default_path": "sidebar.html"
+  },
+  "action": {
+    "default_title": "Open SeoulFlow"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}

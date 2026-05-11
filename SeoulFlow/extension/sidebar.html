@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SeoulFlow</title>
+  <link rel="stylesheet" href="sidebar.css" />
+</head>
+<body>
+  <header>
+    <h1>SeoulFlow</h1>
+    <p class="subtitle">Real-time Traffic Monitor</p>
+  </header>
+
+  <section class="controls">
+    <input id="video-path" type="text" placeholder="videos/test.mp4" value="videos/test.mp4" />
+    <div class="btn-row">
+      <button id="btn-start">Start</button>
+      <button id="btn-stop" disabled>Stop</button>
+    </div>
+  </section>
+
+  <section class="status-section">
+    <div id="status-badge" class="badge free">FREE</div>
+  </section>
+
+  <section class="stats">
+    <div class="stat-card">
+      <span class="stat-value" id="total">—</span>
+      <span class="stat-label">Total</span>
+    </div>
+    <div class="stat-card">
+      <span class="stat-value" id="moving">—</span>
+      <span class="stat-label">Moving</span>
+    </div>
+    <div class="stat-card">
+      <span class="stat-value" id="stationary">—</span>
+      <span class="stat-label">Stationary</span>
+    </div>
+    <div class="stat-card">
+      <span class="stat-value" id="fps">—</span>
+      <span class="stat-label">FPS</span>
+    </div>
+  </section>
+
+  <section class="score-section">
+    <label>Congestion Score</label>
+    <div class="score-bar-track">
+      <div id="score-bar" class="score-bar" style="width: 0%"></div>
+    </div>
+    <span id="score-value" class="score-value">0.00</span>
+  </section>
+
+  <script src="sidebar.js"></script>
+</body>
+</html>
