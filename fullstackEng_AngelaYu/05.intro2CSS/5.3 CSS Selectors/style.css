@@ -5,3 +5,16 @@ ol {
 }
 
 /* Write your CSS below, don't change the rules above. */
+
+
+.note{
+  color:red;
+  font-size:20px;
+}
+
+#id-selector-demo{
+  color:green
+}
+p[value = "4"]{
+  color:blue
+}
